@@ -6,7 +6,7 @@
    | (_| |  __/\ V /| |_) | (_) >  < 
     \__,_|\___| \_/ |_.__/ \___/_/\_\
 ```
-A vagrant LAMP stack based on Ubuntu Xenial 16.04 with MariaDB, PHP7 plus a bunch of extensions. Also Git, MongoDB, Node, Yarn, Gulp, Composer, PhpUnit, Slap and more.
+A vagrant LAMP stack based on Ubuntu Xenial 16.04 with MariaDB, PHP7 plus a bunch of extensions. Also Git, MongoDB, Node, Yarn, Gulp, Composer, PhpUnit, Micro and more.
 
 I'm currently using this as my base dev setup. I'd been using scotchbox for a while, but wanted to learn how to provision everything myself.
 
@@ -61,5 +61,3 @@ Feel free to send suggestions or pull requests.
 
 ## License
 MIT
-
-
