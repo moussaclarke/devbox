@@ -3,9 +3,6 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css" rel="stylesheet">
             <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
                 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css" rel="stylesheet">
-                </link>
-            </link>
-        </link>
     </head>
     <body>
         <section class="hero">
@@ -70,12 +67,12 @@
                     <li>
                         <i aria-hidden="true" class="icon-nodejs">
                         </i>
-                        Node 6 LTS and npm
+                        Node 8 LTS and npm
                     </li>
                     <li>
                         <i aria-hidden="true" class="icon-nodejs">
                         </i>
-                        Yarn, Gulp, Browserify and Slap installed globally
+                        Yarn, Gulp and Browserify installed globally, plus Micro editor
                     </li>
                 </ul>
             </div>
@@ -134,7 +131,7 @@
         </section>
         <section class="section">
             <div class="container">
-            <?php
+<?php
 ob_start();
 phpinfo(INFO_GENERAL | INFO_CONFIGURATION | INFO_MODULES);
 $phpi = ob_get_contents();
@@ -152,7 +149,7 @@ $phpi = str_replace('</table>', '</tbody></table>', $phpi);
 $phpi = str_replace('</div>', '', $phpi);
 echo $phpi;
 ?>
-</div>
-</section>
+            </div>
+        </section>
     </body>
 </html>

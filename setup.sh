@@ -124,8 +124,8 @@ sudo mv phpunit-6.2.phar /usr/local/bin/phpunit
 phpunit --version
 
 # Node ftw
-echo "Node 6 LTS..."
-curl -sL https://deb.nodesource.com/setup_6.x | qu sudo -E bash -
+echo "Node 8 LTS..."
+curl -sL https://deb.nodesource.com/setup_8.x | qu sudo -E bash -
 qu sudo apt-get install -y nodejs
 
 ## Spinning a yarn
@@ -138,14 +138,14 @@ qu sudo apt-get -y update && qu sudo apt-get -y install yarn
 echo "Gulp..."
 sudo npm install gulp-cli -g
 
-## Slap yo' vim
-echo "Slap editor..."
-qu sudo npm install -g slap@latest
-git config --global core.editor "slap"
-
 ## Browserify
 echo "Browserify..."
 sudo npm install -g browserify
+
+## Micro ('cos Slap seems to be abandoned)
+echo "Micro editor..."
+sudo snap install micro --classic
+sudo git config --global core.editor "micro"
 
 # Restart Michael Viner
 echo "Restart Apache..."
@@ -187,7 +187,7 @@ sudo cat > /etc/update-motd.d/10-help-text <<'EOF'
 
 printf "\n"
 printf " * A LAMP stack with MariaDB, PHP7 plus a bunch of extensions\n"
-printf " * Also Git, MongoDB, Node, Yarn, Gulp, Composer, PhpUnit, Slap and more\n"
+printf " * Also Git, MongoDB, Node, Yarn, Gulp, Composer, PhpUnit, Micro and more\n"
 printf " * More info at  https://github.com/moussaclarke/devbox\n"
 EOF
 

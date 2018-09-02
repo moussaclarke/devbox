@@ -40,8 +40,8 @@ You can then visit `http://dev.box`
 * MariaDB and MongoDB
 * PHP7 and a load of extensions
 * Composer and PHPUnit installed globally
-* Node 6 LTS and npm
-* Yarn, Gulp, Browserify and Slap installed globally
+* Node 8 LTS and npm
+* Yarn, Gulp and Browserify installed globally, plus Micro Editor
 * Have a look at the setup.sh provisioning script for more info
 
 ## Connecting to DB from the host
