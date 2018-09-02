@@ -118,9 +118,9 @@ composer -V
 
 # Testy-eye
 echo "PhpUnit..."
-qu sudo wget https://phar.phpunit.de/phpunit-6.2.phar
-sudo chmod +x phpunit-6.2.phar
-sudo mv phpunit-6.2.phar /usr/local/bin/phpunit
+qu sudo wget https://phar.phpunit.de/phpunit-7.phar
+sudo chmod +x phpunit-7.phar
+sudo mv phpunit-7.phar /usr/local/bin/phpunit
 phpunit --version
 
 # Node ftw
