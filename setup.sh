@@ -107,7 +107,7 @@ sudo systemctl enable mongodb
 # Php and ting
 echo "PHP 7 and extensions..."
 qu sudo apt-get -y install php
-qu sudo apt-get -y install php-fpm php-mysql libapache2-mod-php php-cli php-json php-xmlrpc php7.1-opcache php-zip php-imap php-curl php-xml php-gd php-mbstring php-dev php-pear php-imagick php-mongodb
+qu sudo apt-get -y install php-fpm php-mysql libapache2-mod-php php-cli php-json php-xmlrpc php-opcache php-zip php-imap php-curl php-xml php-gd php-mbstring php-dev php-pear php-imagick php-mongodb php-intl php-soap php-bcmath
 
 # Wagner or Verdi
 echo "Composer..."

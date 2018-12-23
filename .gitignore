@@ -1,1 +1,4 @@
 .vagrant
+public/*
+!public/index.php
+!public/tty.gif

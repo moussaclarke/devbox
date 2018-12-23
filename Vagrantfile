@@ -18,14 +18,22 @@ Vagrant.configure("2") do |config|
   # Hostname
   config.vm.hostname = "devbox"
 
+  # Memory
+  config.vm.provider "virtualbox" do |v|
+    v.memory = 4096
+  end
+
   # Private network
   config.vm.network "private_network", ip: "192.168.33.10"
 
   # Forward mysql
   config.vm.network "forwarded_port", guest: 3306, host: 3306
 
-  # Share folder
+  # Share folder setup
+  # Standard option
   config.vm.synced_folder ".", "/var/www", :mount_options => ["dmode=777", "fmode=666"]
+  # Or You might need to use the following, faster option for some frameworks where speed is an issue, e.g. Magento, just comment/uncomment as necessary
+  # config.vm.synced_folder ".", "/var/www", nfs: true
 
   # Provision all the things
   config.vm.provision :shell, path: "setup.sh"
