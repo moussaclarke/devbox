@@ -49,7 +49,7 @@ You can then visit `http://dev.box`
 * MongoDB with Robo3T: Connection address: localhost:27017 SSH address: 192.168.3310 u: vagrant p: vagrant Auth Method: Password
 
 ## Will it run framework X?
-* It seems to run Slim, Laravel, October and Wordpress just fine. For Magento 2, you'll need to edit the share folder section in setup.sh. Haven't tried any others, but should be good to go.
+* It seems to run Slim, Laravel, October and Wordpress just fine. For Magento 2, you'll need to edit the share folder section in Vagrantfile. Haven't tried any others, but should be good to go.
 
 ## Todo
 * Some checks to make sure everything actually get installed
